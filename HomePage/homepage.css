@@ -1,5 +1,9 @@
 body {
-	background-image: url("SantaMarx.png");
+	background-image: url("../SantaMarx.png");
+    background-size: cover;
+
+	min-width:1200px;
+	width: auto !important;
 }
 
 .block {
@@ -18,30 +22,46 @@ body {
 }
 
 #coreText {
-	/*font-family: 'Sorts Mill Goudy'*/
 	font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
 	font-size: 50px;
 	font-weight: lighter;
 	text-align: center;
 	padding-top: 20px;
 	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
 }
 
-#enlistButton {
-	font-size: 12pt;
+#enlistButton, #headerEnlist {
 	margin: 0 auto;
 	width: 23%;
 	text-align: center;
 	display: flex; 
 	justify-content: center;
-	border-radius: 10pt;
-	padding: 10pt;
-	padding-right: 20pt;
-	padding-left: 20pt;
 	background-color: #E6DEDC;
 	border-color: red;
 	
+}
+
+#enlistButton {
+	border-radius: 10pt;
+	padding: 10pt;
+	font-size: 12pt;
+	padding-right: 20pt;
+	padding-left: 20pt;
+	min-width: 
+	
+}
+
+#headerEnlist {
+	width: 60px;
+	float: right;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 10pt;
+	padding-left: 6px;
+	padding-right: 6px;
+	border-radius: 8pt;
 }
 
 #coreButton {
@@ -51,6 +71,7 @@ body {
 	width: 50%;
 	margin: 0 auto;
 	padding-bottom: 60px;
+	min-width: 600px;
 }
 
 #head {
@@ -61,6 +82,9 @@ body {
 
 .headerElements {
 	height: 100%;
+	vertical-align: middle;
+	line-height: 30px;
+	max-height: 30px;
 }
 
 #leftMost {
@@ -69,7 +93,12 @@ body {
 
 #rightMost {
 	float: right;
-	background-color: black;
+	display: inline-block;
+	width: 10%;
+	position: relative;
+	min-width: 100px;
+	max-width: 120px;
+	padding-right: 2%;
 }
 
 #center {
@@ -91,8 +120,27 @@ footer {
 	height: 20px;
 }
 
-p {
-	max-height: 30px;
+a:link {
+	color: #19967d;
+}
+
+#loginLink {
 	padding: 0;
 	margin: 0;
+	height: 100%;
+	width: 60px;
+	float: left;
+}
+
+.centerElements {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.headFoot {
+	overflow: show;
+}
+
+#head div p, #head div a {
+	font-size: 13pt;
 }
